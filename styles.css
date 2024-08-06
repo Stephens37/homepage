@@ -2,3 +2,65 @@
     margin: 0;
     height: 100%;
 }
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    row-gap: 30px;
+    padding: 0 30px;
+}
+
+.about-me-section {
+    grid-row: 1;
+}
+
+.about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 4fr;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.my-picture {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+}
+
+.about-me-title {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 30px;
+}
+
+.about-me-text {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.container-layout {
+    grid-row: 2;
+}
+
+.grid-container-layout {
+    display: grid;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-section {
+    grid-row: 3;
+}
+
+.contact-grid-section {
+    display: grid;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
