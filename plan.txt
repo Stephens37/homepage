@@ -1,0 +1,2 @@
+the blue triangle wants to move around when it should be staying in one position
+- how do I keep it in one position as the page grows and shrinks

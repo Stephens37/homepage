@@ -12,11 +12,13 @@
 
 .blue-back1 {
     position: fixed;
-    z-index: 1;
+    z-index: 1s;
     background-color: blue;
-    height: 2000px;
-    width: 200%;
-    transform: translateY(-200vh) skewY(-30deg);
+    background: linear-gradient(to top left,  #fff 0%, #fff 50%, blue 50%, blue 100%);
+    height: 50%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
     overflow: hidden;
     grid-row: 1;
 }
@@ -58,9 +60,15 @@
 .about-me-text {
     grid-column: 2;
     grid-row: 2;
+
 }
 
-@media (max-width: 700px) {
+
+@media (max-width: 800px) {
+    .outer-name {
+        display: none;
+    }
+
     .about-me-grid {
         display: grid;
         grid-template-rows: 10% 50% 40%;
@@ -102,6 +110,10 @@
         margin-right: auto;
         margin-left: auto;
         z-index: 3;
+        border: 3px solid lightgray;
+        border-radius: 5px;
+        background-color: white;
+        padding: 10px;
     }
 
     .about-me-header {
@@ -116,7 +128,17 @@
     }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 801px) {
+    .outer-name {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30px;
+        color: white;
+    }
+
     .about-me-section {
         margin-top: 50px;
     }
@@ -132,17 +154,11 @@
         border: 3px solid lightgray;
         border-radius: 3px;
         background-color: white;
+        padding: 10px;
     }
 
     .about-me-title {
-        grid-row: 1;
-        grid-column: 2;
-        font-size: 30px;
-        height: fit-content;
-        width: fit-content;
-        transform: translateY(-37vh);
-        justify-self: center;
-        z-index: 4;
+        display: none;
     }
     
     .my-picture {
@@ -152,20 +168,24 @@
         width: fit-content;
         z-index: 3;
         float: left;
-        transform: translateX(-5vh) translateY(-5vh);
+        transform: translateX(-3vh) translateY(-5vh);
+    }
+
+    .about-me-text-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about-me-text {
+        grid-row: 1 / span 2;
+        text-wrap: wrap;
+        max-width: 100%;
     }
 
     .about-me-header {
         height: fit-content;
         width: fit-content;
-    }
-    .about-me-text {
-        float: right;
-        grid-row: 1 / span 2;
-        text-wrap: wrap;
-        max-width: 100%;
-        height: fit-content;
-        
+        align-self: center;
     }
 }
 
