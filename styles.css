@@ -63,6 +63,12 @@
 
 }
 
+@media (max-width: 671px) {
+    .flex-container-layout {
+        justify-content: center;
+    }
+}
+
 
 @media (max-width: 800px) {
     .outer-name {
@@ -167,6 +173,12 @@
         height: 5vh;
         width: 5vh;
     }
+    .my-work {
+        grid-row: 1;
+        font-size: 30px;
+        justify-self: center;
+        align-self: center;
+    }
 }
 
 @media (min-width: 801px) {
@@ -261,8 +273,15 @@
     }
 }
 
+@media (min-width: 672px) {
+    .flex-container-layout {
+        justify-content: space-between;
+    }
+}
+
 .container-layout {
     grid-row: 2;
+    margin: 0 20px;
 }
 
 .grid-container-layout {
@@ -285,7 +304,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .flex-container {
@@ -306,12 +325,19 @@
     grid-row: 1;
 }
 
-.screenshot {
+.screenshot-grid {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.screenshot {
+    grid-column: 1;
+    grid-row: 1;
     height: fit-content;
     width: fit-content;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
 }
 
 .bottom-half-fc {
@@ -323,28 +349,37 @@
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
+    margin: 0 10px;
 }
 
 .project-name {
     grid-column: 1;
     grid-row: 1;
-    justify-self: center;
-    align-self: center;
+    height: fit-content;
+    width: fit-content;
 }
 
 .fc-github {
     grid-column: 2;
     grid-row: 1;
+    height: 25px;
+    width: 25px;
+    justify-self: center;
 }
 
 .fc-sitelink {
     grid-column: 3;
     grid-row: 1;
+    height: 25px;
+    width: 25px;
+    justify-self: center;
 }
 
 .description {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
     grid-row: 2;
+    height: fit-content;
+    width: 240px;
 }
 
 .contact-section {

@@ -9,6 +9,18 @@ function multipleProjects () {
 
 multipleProjects()
 
+function checkParent(parent, child) {
+    if (parent.contains(child)) {
+        console.log('hi')
+    }
+    console.log('bye')
+}
+
+const aboutMeSection = document.querySelector('.about-me-section')
+const containerLayout = document.querySelector('.container-layout')
+
+checkParent(aboutMeSection, containerLayout)
+
 /*
 want to create an identical gcl based off of its original
 start by defining gcl and giving it a variable
