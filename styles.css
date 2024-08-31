@@ -63,13 +63,6 @@
 
 }
 
-@media (max-width: 671px) {
-    .flex-container-layout {
-        justify-content: center;
-    }
-}
-
-
 @media (max-width: 800px) {
     .outer-name {
         display: none;
@@ -145,7 +138,7 @@
         padding: 0 20px;
     }
 
-    /*.about-me-header {
+    .about-me-header {
         height: fit-content;
         width: fit-content;
         margin-left: auto;
@@ -154,7 +147,7 @@
 
     .about-me-paragraph {
         margin-top: 30px;
-    }*/
+    }
 
     .devicon-section {
         grid-row: 3;
@@ -273,10 +266,25 @@
     }
 }
 
+@media (max-width: 671px) {
+    .flex-container-layout {
+        justify-content: center;
+    }
+}
+
 @media (min-width: 672px) {
     .flex-container-layout {
         justify-content: space-between;
     }
+}
+
+.flex-container-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
 }
 
 .container-layout {
@@ -299,13 +307,6 @@
     grid-row: 2;
 }
 
-.flex-container-layout {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
 .flex-container {
     height: 300px;
@@ -318,6 +319,22 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 3fr;
+}
+
+#top-half-1 {
+    background-color: red;
+}
+
+#top-half-2 {
+    background-color: blue;
+}
+
+#top-half-3 {
+    background-color: green;
+}
+
+#top-half-4 {
+    background-color: purple;
 }
 
 .top-half-fc {
@@ -338,6 +355,7 @@
     width: fit-content;
     justify-self: center;
     align-self: center;
+    color: white;
 }
 
 .bottom-half-fc {
