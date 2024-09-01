@@ -1,2 +1,11 @@
 the blue triangle wants to move around when it should be staying in one position
 - how do I keep it in one position as the page grows and shrinks
+
+- how do I let the height of a grid container expand when there is another grid container blocking expansion past a certain point
+
+contact section:
+- begin with the mobile layout
+- grid with picture at bottom, contact info on top
+
+- shift to wide-screen display at the same time as the about me section
+- picture will be on the right, text on the left
