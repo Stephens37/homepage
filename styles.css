@@ -404,10 +404,71 @@
     grid-row: 3;
 }
 
-.contact-grid-section {
-    display: grid;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
+@media (max-width: 800px) {
+    .contact-grid-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .contact-info {
+        grid-row: 1;
+    }
+    
+    .contact-info-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr), 2fr;
+    }
+
+    .contact-me {
+        grid-row: 1;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .call-to-action {
+        grid-row: 2;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .street-address {
+        grid-row: 3;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .location {
+        grid-row: 4;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .phone-number {
+        grid-row: 5;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .my-email {
+        grid-row: 6;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .devicon2 {
+        grid-row: 7;
+        justify-content: space-between;
+    }
+
+    .devicon2s {
+        height: 10vh;
+        width: 10vw;
+    }
+}
+
+.phone-man {
+    object-fit: cover;
+    object-position: center;
 }
